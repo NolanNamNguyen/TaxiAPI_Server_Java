@@ -22,23 +22,45 @@ public class TaxiUser {
 	@Column
 	@JsonIgnore
 	private String Password;
-	private byte[] PasswordHash;
-	private byte[] PasswordSalt;
-	private String ImagePath;
+//	@Column
+//	private byte[] PasswordHash;
+//	@Column
+//	private String ImagePath;
+	@Column
 	private String Name;
-	private String Phone;
-	private String Email;
-	private String Address;
-	private Date Created;
-	private Date Updated;
-	private Boolean IsVerified;
-	private String VerificationToken;
-	private String ResetToken;
-	private Date ResetTokenExpires;
-	private String Role;
-	private Admin Admin;
+//	@Column
+//	private String Phone;
+//	@Column
+//	private String Email;
+//	@Column
+//	private String Address;
+//	@Column
+//	private Date Created;
+//	@Column
+//	private Date Updated;
+//	@Column
+//	private Boolean IsVerified;
+//	@Column
+//	private String VerificationToken;
+//	@Column
+//	private String ResetToken;
+//	@Column
+//	private Date ResetTokenExpires;
+//	@Column
+//	private String Role;
 	
 	
+
+	public TaxiUser() {
+	}
+
+	public TaxiUser(String userName, String password, String name) {
+		UserName = userName;
+		Password = password;
+		Name = name;
+	}
+
+
 
 	public String getPassword() {
 		return Password;
@@ -64,29 +86,21 @@ public class TaxiUser {
 		UserName = userName;
 	}
 
-	public byte[] getPasswordHash() {
-		return PasswordHash;
-	}
-
-	public void setPasswordHash(byte[] passwordHash) {
-		PasswordHash = passwordHash;
-	}
-
-	public byte[] getPasswordSalt() {
-		return PasswordSalt;
-	}
-
-	public void setPasswordSalt(byte[] passwordSalt) {
-		PasswordSalt = passwordSalt;
-	}
-
-	public String getImagePath() {
-		return ImagePath;
-	}
-
-	public void setImagePath(String imagePath) {
-		ImagePath = imagePath;
-	}
+//	public byte[] getPasswordHash() {
+//		return PasswordHash;
+//	}
+//
+//	public void setPasswordHash(byte[] passwordHash) {
+//		PasswordHash = passwordHash;
+//	}
+//
+//	public String getImagePath() {
+//		return ImagePath;
+//	}
+//
+//	public void setImagePath(String imagePath) {
+//		ImagePath = imagePath;
+//	}
 
 	public String getName() {
 		return Name;
@@ -96,93 +110,85 @@ public class TaxiUser {
 		Name = name;
 	}
 
-	public String getPhone() {
-		return Phone;
-	}
-
-	public void setPhone(String phone) {
-		Phone = phone;
-	}
-
-	public String getEmail() {
-		return Email;
-	}
-
-	public void setEmail(String email) {
-		Email = email;
-	}
-
-	public String getAddress() {
-		return Address;
-	}
-
-	public void setAddress(String address) {
-		Address = address;
-	}
-
-	public Date getCreated() {
-		return Created;
-	}
-
-	public void setCreated(Date created) {
-		Created = created;
-	}
-
-	public Date getUpdated() {
-		return Updated;
-	}
-
-	public void setUpdated(Date updated) {
-		Updated = updated;
-	}
-
-	public Boolean getIsVerified() {
-		return IsVerified;
-	}
-
-	public void setIsVerified(Boolean isVerified) {
-		IsVerified = isVerified;
-	}
-
-	public String getVerificationToken() {
-		return VerificationToken;
-	}
-
-	public void setVerificationToken(String verificationToken) {
-		VerificationToken = verificationToken;
-	}
-
-	public String getResetToken() {
-		return ResetToken;
-	}
-
-	public void setResetToken(String resetToken) {
-		ResetToken = resetToken;
-	}
-
-	public Date getResetTokenExpires() {
-		return ResetTokenExpires;
-	}
-
-	public void setResetTokenExpires(Date resetTokenExpires) {
-		ResetTokenExpires = resetTokenExpires;
-	}
-
-	public String getRole() {
-		return Role;
-	}
-
-	public void setRole(String role) {
-		Role = role;
-	}
-
-	public Admin getAdmin() {
-		return Admin;
-	}
-
-	public void setAdmin(Admin admin) {
-		Admin = admin;
-	}
+//	public String getPhone() {
+//		return Phone;
+//	}
+//
+//	public void setPhone(String phone) {
+//		Phone = phone;
+//	}
+//
+//	public String getEmail() {
+//		return Email;
+//	}
+//
+//	public void setEmail(String email) {
+//		Email = email;
+//	}
+//
+//	public String getAddress() {
+//		return Address;
+//	}
+//
+//	public void setAddress(String address) {
+//		Address = address;
+//	}
+//
+//	public Date getCreated() {
+//		return Created;
+//	}
+//
+//	public void setCreated(Date created) {
+//		Created = created;
+//	}
+//
+//	public Date getUpdated() {
+//		return Updated;
+//	}
+//
+//	public void setUpdated(Date updated) {
+//		Updated = updated;
+//	}
+//
+//	public Boolean getIsVerified() {
+//		return IsVerified;
+//	}
+//
+//	public void setIsVerified(Boolean isVerified) {
+//		IsVerified = isVerified;
+//	}
+//
+//	public String getVerificationToken() {
+//		return VerificationToken;
+//	}
+//
+//	public void setVerificationToken(String verificationToken) {
+//		VerificationToken = verificationToken;
+//	}
+//
+//	public String getResetToken() {
+//		return ResetToken;
+//	}
+//
+//	public void setResetToken(String resetToken) {
+//		ResetToken = resetToken;
+//	}
+//
+//	public Date getResetTokenExpires() {
+//		return ResetTokenExpires;
+//	}
+//
+//	public void setResetTokenExpires(Date resetTokenExpires) {
+//		ResetTokenExpires = resetTokenExpires;
+//	}
+//
+//	public String getRole() {
+//		return Role;
+//	}
+//
+//	public void setRole(String role) {
+//		Role = role;
+//	}
 
 //     private Customer Customer ;
 //     private Driver Driver ;

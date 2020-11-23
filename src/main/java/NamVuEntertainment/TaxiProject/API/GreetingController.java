@@ -44,13 +44,13 @@ public class GreetingController {
 		List<TaxiUser> tempEmployees = new ArrayList<>();
 		TaxiUser emp1 = new TaxiUser();
 		emp1.setName("emp1");
-		emp1.setEmail("manager@gmail.com");
-		emp1.setPhone("1123212345");
+//		emp1.setEmail("manager@gmail.com");
+//		emp1.setPhone("1123212345");
 
 		TaxiUser emp2 = new TaxiUser();
 		emp2.setName("emp2");
-		emp1.setEmail("managerasd234@gmail.com");
-		emp1.setPhone("999999");
+//		emp1.setEmail("managerasd234@gmail.com");
+//		emp1.setPhone("999999");
 		tempEmployees.add(emp1);
 		tempEmployees.add(emp2);
 		return tempEmployees;
